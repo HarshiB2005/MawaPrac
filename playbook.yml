@@ -4,8 +4,8 @@
   tasks: 
 	- name: Copy WAR file to Tomcat
 	  copy:
-	  	src:"/var/snap/jenkins/4865/workspace/MawaPrac-CICD/target/MawaPrac.war"
-	  	dest:"/opt/tomcat/webapps/Mawaprac.war"
+	  	src: "/var/snap/jenkins/4865/workspace/MawaPrac-CICD/target/MawaPrac.war"
+	  	dest: "/opt/tomcat/webapps/Mawaprac.war"
 	  	remote_src: no
 	- name: Restart Tomcat
 	  systemd:
